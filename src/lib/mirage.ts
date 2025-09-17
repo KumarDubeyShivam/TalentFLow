@@ -50,7 +50,7 @@ interface TimelineAttrs {
   createdAt: string;
 }
 
-export function makeServer({ environment = "production", jobs = [], candidates = [], assessments = [] } = {}) {
+export function makeServer({ environment = "development", jobs = [], candidates = [], assessments = [] } = {}) {
   return createServer({
     environment,
 
