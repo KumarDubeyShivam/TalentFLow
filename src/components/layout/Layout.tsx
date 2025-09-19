@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from 'react';
 import { Header } from './Header';
 import { Sidebar } from './Sidebar';
@@ -18,7 +20,7 @@ export function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <div className="flex flex-col min-h-[calc(100vh-56px)]"> {/* 56px for header height */}
+      <div className="flex flex-1 min-h-[calc(100vh-56px)]"> {/* 56px for header height, flex-1 for full height */}
         {/* Mobile sidebar drawer */}
         <div className="md:hidden">
           {sidebarOpen && (
