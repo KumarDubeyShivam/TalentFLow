@@ -28,8 +28,9 @@ export default function Signup() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-primary to-secondary">
-      <Card className="bg-white/95 backdrop-blur-sm shadow-lg border-0 w-full max-w-md">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-primary to-secondary">
+      <div className="flex-1 flex items-center justify-center">
+        <Card className="bg-white/95 backdrop-blur-sm shadow-lg border-0 w-full max-w-md">
         <CardHeader>
           <CardTitle>Create your account</CardTitle>
           <CardDescription>Sign up for TalentFlow</CardDescription>
@@ -95,7 +96,11 @@ export default function Signup() {
             </a>
           </CardFooter>
         </form>
-      </Card>
+        </Card>
+      </div>
+      <footer className="w-full text-center py-4 bg-card/0 border-none text-muted-foreground text-sm">
+        &copy; ShivamKumarDubey 2025
+      </footer>
     </div>
   );
 }

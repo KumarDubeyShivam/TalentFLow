@@ -46,8 +46,9 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-hero flex items-center justify-center p-4">
-      <div className="w-full max-w-md space-y-6">
+    <div className="min-h-screen bg-gradient-hero flex flex-col">
+      <div className="flex-1 flex items-center justify-center p-4">
+        <div className="w-full max-w-md space-y-6">
         {/* Logo */}
         <div className="text-center">
           <div className="inline-flex items-center gap-2 mb-2">
@@ -136,7 +137,11 @@ export default function Login() {
             </CardFooter>
           </form>
         </Card>
+        </div>
       </div>
+      <footer className="w-full text-center py-4 bg-card/0 border-none text-muted-foreground text-sm">
+        &copy; ShivamKumarDubey 2025
+      </footer>
     </div>
   );
 }

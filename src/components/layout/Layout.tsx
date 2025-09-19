@@ -18,7 +18,7 @@ export function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <div className="flex">
+      <div className="flex flex-col min-h-[calc(100vh-56px)]"> {/* 56px for header height */}
         {/* Mobile sidebar drawer */}
         <div className="md:hidden">
           {sidebarOpen && (
@@ -37,6 +37,10 @@ export function Layout({ children }: LayoutProps) {
           {children}
         </main>
       </div>
+      {/* Footer always at bottom */}
+      <footer className="w-full text-center py-4 bg-card/0 border-none text-muted-foreground text-sm">
+        &copy; ShivamKumarDubey 2025
+      </footer>
     </div>
   );
 }
